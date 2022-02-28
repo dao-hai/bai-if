@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" id="qua">
+    <button onclick="tinh()">Xem giá</button>
+    <p id = "rs"></p>
+    <script>
+        function tinh() {
+            let a = document.getElementById('qua').value
+            let kq
+            if (a == "mang cut"){
+                kq = "50.000d/kg"
+            }
+            if (a == "oi"){
+                kq = "20.000d/kg"
+            }
+            if (a == "dua hau"){
+                kq = "20.000đ/kg"
+            }
+        document.getElementById("rs").innerHTML = "Giá "+a+" : "+kq;
+        }
+    </script>
+</body>
+</html>
